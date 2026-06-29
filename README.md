@@ -4,6 +4,12 @@ An interactive, high-performance web platform designed to map **Highly Pathogeni
 
 ---
 
+### 🌐 Live Prototype
+- **Official Production Domain:** **[https://hpai.sfle.ca/](https://hpai.sfle.ca/)**
+- **Cloud Run Direct Mirror:** **[https://surveillance-app-979889483805.northamerica-northeast1.run.app/](https://surveillance-app-979889483805.northamerica-northeast1.run.app/)**
+
+---
+
 ## 📖 Scientific Context & Inspiration
 
 This platform is inspired by and directly aligns with the findings of the landmark Canadian research article:
@@ -124,9 +130,6 @@ npm run start
 ## 🛠️ Production Deployment Guide (GCP Serverless)
 
 The repository includes standard container configurations in the `deploy/` directory to facilitate rapid, production-grade container builds.
-
-> [!NOTE]
-> Highly sensitive environment variables, service keys, and personal deployment automation scripts (`deploy-gcp.ps1`, `deploy-gcp.sh`, and `.gcloudignore`) are excluded from Git repository tracking for security. You can configure these scripts locally to coordinate deployment.
 
 ### 1. Artifact Registry
 Create a Docker registry in your chosen GCP region to store your frontend image:
