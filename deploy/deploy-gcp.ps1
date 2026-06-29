@@ -84,14 +84,14 @@ Write-Host "`n==================================================================
 Write-Host "🎉 DEPLOYMENT COMPLETED SUCCESSFULLY!" -ForegroundColor Green
 Write-Host "===================================================================" -ForegroundColor Green
 Write-Host "Your Cloud Run Service is live at: $SERVICE_URL" -ForegroundColor Cyan
-Write-Host "`nNote on Domain Mapping to 'sfle.ca':" -ForegroundColor Yellow
-Write-Host "To point this service to a subdomain like hpai.sfle.ca, follow either:"
+Write-Host "`nNote on Domain Mapping to 'yourdomain.com':" -ForegroundColor Yellow
+Write-Host "To point this service to a subdomain like hpai.yourdomain.com, follow either:"
 Write-Host "`nOption A (Direct CNAME Integration - Easiest):" -ForegroundColor Magenta
 Write-Host "1. Run command:"
-Write-Host "   gcloud beta run domain-mappings create --service=$SERVICE_NAME --domain=hpai.sfle.ca --region=$REGION" -ForegroundColor Cyan
-Write-Host "2. Add the provided DNS TXT/CNAME records inside your sfle.ca registrar domain configuration."
+Write-Host "   gcloud beta run domain-mappings create --service=$SERVICE_NAME --domain=hpai.yourdomain.com --region=$REGION" -ForegroundColor Cyan
+Write-Host "2. Add the provided DNS TXT/CNAME records inside your yourdomain.com registrar domain configuration."
 Write-Host "`nOption B (Global External HTTPS Load Balancer - Premium production performance):" -ForegroundColor Magenta
 Write-Host "1. Create a serverless Network Endpoint Group (NEG) pointing to the Cloud Run service."
 Write-Host "2. Set up a GCP Load Balancer with a static external IP, Google-managed SSL Certificate, and point to the NEG."
-Write-Host "3. Add an A record for hpai.sfle.ca pointing to the Load Balancer IP."
+Write-Host "3. Add an A record for hpai.yourdomain.com pointing to the Load Balancer IP."
 Write-Host "==================================================================="

@@ -5,7 +5,6 @@ An interactive, high-performance web platform designed to map **Highly Pathogeni
 ---
 
 ### 🌐 Live Prototype
-- **Official Production Domain:** **[https://hpai.sfle.ca/](https://hpai.sfle.ca/)**
 - **Cloud Run Direct Mirror:** **[https://surveillance-app-979889483805.northamerica-northeast1.run.app/](https://surveillance-app-979889483805.northamerica-northeast1.run.app/)**
 
 ---
@@ -16,7 +15,7 @@ To keep the root of the repository clean and professional, comprehensive guides,
 
 - 🎨 **[Application Features](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/features.md):** Deep-dive on user interfaces, dynamic multi-dimensional filters, data source toggles, and the custom physics simulation engine.
 - ⚙️ **[System Architecture](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/architecture.md):** Structural monorepo layout, automated scanner pipeline (NCBI PubMed & RSS APIs + Gemini AI), and Cloud Firestore database schemas.
-- 🚀 **[Deployment Guidance](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/deployment.md):** Local environment setup, Google Cloud Run orchestration, DNS custom domain mapping (`hpai.sfle.ca`), and AWS/Vercel/Docker alternative setups.
+- 🚀 **[Deployment Guidance](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/deployment.md):** Local environment setup, Google Cloud Run orchestration, DNS custom domain mapping (`hpai.yourdomain.com`), and AWS/Vercel/Docker alternative setups.
 - 🔮 **[Future Features & Roadmap](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/future_features.md):** Extended product extensions (GIS maps/Mapbox integrations, temporal sliders, automated email alerts, and graph-theoretic collaboration metrics).
 
 ---

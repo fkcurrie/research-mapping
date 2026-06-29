@@ -94,24 +94,24 @@ bash ./deploy/deploy-gcp.sh
 
 ---
 
-## 3. Subdomain Mapping & SSL (sfle.ca)
+## 3. Subdomain Mapping & SSL (yourdomain.com)
 
-To map the serverless endpoint to a custom domain (e.g., `hpai.sfle.ca`), you have two direct options:
+To map the serverless endpoint to a custom domain (e.g., `hpai.yourdomain.com`), you have two direct options:
 
 ### Option A: Direct CNAME Integration (Easiest)
 1. Run the domain-mapping command:
    ```bash
-   gcloud beta run domain-mappings create --service=surveillance-app --domain=hpai.sfle.ca --region=northamerica-northeast1
+   gcloud beta run domain-mappings create --service=surveillance-app --domain=hpai.yourdomain.com --region=northamerica-northeast1
    ```
 2. Retrieve the custom DNS records output by Google Cloud.
 3. Navigate to your DNS Registrar (e.g., Cloudflare, GoDaddy) and add the corresponding `CNAME` and verification `TXT` records.
-4. Google will automatically provision a free, auto-renewing SSL certificate for `hpai.sfle.ca`.
+4. Google will automatically provision a free, auto-renewing SSL certificate for `hpai.yourdomain.com`.
 
 ### Option B: External Global HTTPS Load Balancer (Premium Production)
 1. Create a serverless **Network Endpoint Group (NEG)** pointing to the Cloud Run service.
 2. Set up a **Global External HTTP(S) Load Balancer** with a static external IP and Google-managed SSL Certificate.
 3. Map the Load Balancer backend to the serverless NEG.
-4. Set an `A` record in your DNS registrar pointing `hpai.sfle.ca` directly to the Load Balancer's static external IP.
+4. Set an `A` record in your DNS registrar pointing `hpai.yourdomain.com` directly to the Load Balancer's static external IP.
 
 ---
 
