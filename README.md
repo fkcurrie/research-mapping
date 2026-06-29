@@ -10,6 +10,17 @@ An interactive, high-performance web platform designed to map **Highly Pathogeni
 
 ---
 
+## 📂 Technical Documentation
+
+To keep the root of the repository clean and professional, comprehensive guides, system workflows, and future product backlogs have been organized into the dedicated `/docs` directory:
+
+- 🎨 **[Application Features](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/features.md):** Deep-dive on user interfaces, dynamic multi-dimensional filters, data source toggles, and the custom physics simulation engine.
+- ⚙️ **[System Architecture](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/architecture.md):** Structural monorepo layout, automated scanner pipeline (NCBI PubMed & RSS APIs + Gemini AI), and Cloud Firestore database schemas.
+- 🚀 **[Deployment Guidance](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/deployment.md):** Local environment setup, Google Cloud Run orchestration, DNS custom domain mapping (`hpai.sfle.ca`), and AWS/Vercel/Docker alternative setups.
+- 🔮 **[Future Features & Roadmap](file:///g:/My%20Drive/AGY-Projects/research-mapping/docs/future_features.md):** Extended product extensions (GIS maps/Mapbox integrations, temporal sliders, automated email alerts, and graph-theoretic collaboration metrics).
+
+---
+
 ## 📖 Scientific Context & Inspiration
 
 This platform is inspired by and directly aligns with the findings of the landmark Canadian research article:
