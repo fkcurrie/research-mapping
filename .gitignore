@@ -29,3 +29,9 @@ firebase_config.json
 .env
 .env.*
 
+# Local Deployment Scripts & Configs
+deploy-gcp.ps1
+deploy-gcp.sh
+.gcloudignore
+
+
